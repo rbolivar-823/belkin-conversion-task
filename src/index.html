@@ -1,52 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="./output.css" rel="stylesheet">
-</head>
-
-<body>
-  <section class="bg-purple-900 flex-col">
-    <div class=" text-white flex justify-between">
-      <div class="py-5 px-20">
-        <h1 class="font-bold text-4xl">kross</h1>
-      </div>
-      <div class="py-10 px-20">
-        <nav class="space-x-6 hidden md:block">
-          <a href="#" class="hover:underline">HOME</a>
-          <a href="#" class="hover:underline">ABOUT</a>
-          <a href="#" class="hover:underline">BLOG</a>
-          <a href="#" class="hover:underline">CONTACT</a>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="h-[400px] bg-[url('image/1.png')] bg-cover bg-center bg-no-repeat">
+    <div class=" py-10 px-15 max-w-7xl w-full mx-auto">
+        <nav class="text-black flex justify-between items-center">
+            <div>
+            <h1 class="text-4xl text-white font-semibold">Kross</h1>
+            </div>
+            <button id="menu-btn" class="sm:hidden focus:outline-none">
+                <div class="w-6 h-0.5 bg-gray-800 mb-1 transition-all duration-300"></div>
+                <div class="w-6 h-0.5 bg-gray-800 mb-1 transition-all duration-300"></div>
+                <div class="w-6 h-0.5 bg-gray-800 transition-all duration-300"></div>
+            </button>
+            <ul class="hidden sm:flex space-x-6 px-10 text-white ">
+                <li><a href="#" class="hover:text-white">HOME</a></li>
+                <li><a href="#" class="hover:text-white">ABOUT</a></li>
+                <li><a href="#" class="hover:text-white">BLOGS</a></li>
+                <li><a href="#" class="hover:text-white">PORTFOLIO</a></li>
+                <li><a href="#" class="hover:text-white">CONTACTS</a></li>
+            </ul>
         </nav>
-      </div>
+        
     </div>
-    <div class="mx-auto px-35 py-30">
-        <h2 class="text-6xl text-white font-bold">About Me</h2>
-      </div>
-</section>
+    <div class="w-full flex justify-center px-10">
+        <div class="pt-[150px] flex max-w-5xl w-full mx-auto">
+            <h2 class="text-6xl font-bold text-white">About Me</h2>
+        </div>
+        </div>
+    </header>
+    <section class="w-full py-10 flex justify-center px-10">
+        <div class="flex flex-col md:flex-row justify-between max-w-5xl w-full mx-auto px-4">
+            <div class="max-w-xl">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <br />
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+              <br /><br />
+              <p>Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.</p>
+            </div>
+          
+            <div class="relative mt-10 md:mt-0 md:ml-10">
+              <img src="#" alt="" width="400" class="rounded-2xl w-full max-w-[400px] mx-auto md:absolute md:right-[280px] md:top-[150px]" />
+              <div class="pt-[30px] text-center">
+                <p class="pt-[20px]">Johnathan Smith</p>
+              </div>
+            </div>
+          </div>
+    </section>
+    <section class="w-full flex flex-col justify-center py-[120px] mb-10 px-10">
+        <div class="text-center mx-auto font-bold text-4xl py-20">
+          <p>Work Process</p>
+        </div>
+      
+        <div class="flex flex-col md:flex-row justify-center gap-10 max-w-5xl w-full mx-auto">
+          <div class="text-center">
+            <img src="image/icon-1.png" alt="" width="40px" class="mx-auto">
+            <h2 class="text-center font-semibold text-xl py-2">Research and Plan</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua.</p>
+          </div>
+          <div class="text-center">
+            <img src="image/icon-2.png" alt="" width="40px" class="mx-auto">
+            <h2 class="text-center font-semibold text-xl py-2">Design and Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            Lorem ipsum dolor sit amet, consectetur 
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            
+          </div>
+          <div class="text-center">
+            <img src="image/icon-3.png" alt="" width="40px" class="mx-auto">
+            <h2 class="text-center font-semibold text-xl py-2">Deliver</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur 
+                adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </section>
+      <section class="py-20 bg-[url('image/8.png')] bg-cover bg-center bg-no-repeat">
+        <div class="text-center mb-20">
+          <h2 class="text-4xl font-bold">My Team</h2>
+        </div>
+      
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto px-4">
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+            <img src="image/4.png" alt="Team member" width="400px" class="w-full h-72 object-cover">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Jack Schenziwe</h3>
+              <p class="text-gray-500 text-sm">Project Manager</p>
+            </div>
+          </div>
+      
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+            <img src="image/5.png" alt="Team member" class="w-full h-72 object-cover">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Martin Starba</h3>
+              <p class="text-gray-500 text-sm">UX Designer</p>
+            </div>
+          </div>
+      
+          
+          <div class="bg-white rounded-xl shadow-lg overflow-hidden text-center">
+            <img src="image/6.png" alt="Team member" class="w-full h-72 object-cover">
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Tendi Scout</h3>
+              <p class="text-gray-500 text-sm">Front End Developer</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="w-full flex flex-col justify-center py-[120px] mb-10 px-10">
+        <div class="text-center mx-auto font-bold text-4xl py-20">
+          <p>My Client</p>
+        </div>
+      
+        <div class="flex flex-col md:flex-row justify-center gap-10 max-w-5xl w-full mx-auto">
+          <div class="text-center">
+            <img src="image/9.png" alt="" width="100px" class="mx-auto py-4">
+            
+          </div>
+          <div class="text-center">
+            <img src="image/10.png" alt="" width="120px" class="mx-auto">
+            
+          </div>
+          <div class="text-center">
+            <img src="image/11.png" alt="" width="120px" class="mx-auto py-2">
+            
+          </div>
+          <div class="text-center">
+            <img src="image/12.png" alt="" width="120px" class="mx-auto py-2">
+            
+          </div>
+          <div class="text-center">
+            <img src="image/13.png" alt="" width="120px" class="mx-auto py-2">
+            
+          </div>
+        </div>
+      </section>
 
-<section class="bg-white text-gray-800">
-  <div class="flex">  
-    <div class="max-w-6xl space-y-6 pl-35 mx-auto">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-      </p>
-      <p>
-        Deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia.
-      </p>
-    </div>
-    <div class=" items-center space-y-3 py-2 mx-auto">
-
-      <img src="#" alt="Profile" class=" w-52 ">
-
-    </div>
-  </div>
-
-</section>
-</body>
-</html>
+      <section class="w-full flex flex-col justify-center py-[50px] px-10 h-[400px] bg-[url('image/14.png')] bg-cover bg-center bg-no-repeat">
+        <div class="text-center mx-auto font-bold text-4xl ">
+          <p>Contact Info</p>
+        </div>
+      
+        <div class="flex flex-col md:flex-row justify-center gap-10 max-w-5xl w-full mx-auto">
+          
+        </div>
+      </section>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+    
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+  </body>
+  </html>
